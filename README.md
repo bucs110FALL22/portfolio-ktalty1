@@ -10,8 +10,8 @@ Welcome to CS 110. I look forward to working with you this semester. This is you
 
 ## Student Info - MUST BE COMPLETED
 
-Preferred Name:
+Preferred Name: Keira Talty
 
-Discord username:
+Discord username: Keira Talty#5022
 
-REPL url:
+REPL url: https://github.com/bucs110FALL22/portfolio-ktalty1
