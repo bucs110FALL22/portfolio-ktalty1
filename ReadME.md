@@ -1,3 +1,5 @@
+#CS110 Portfolio
 
-
-REPL url: https://replit.com/join/vdyrrmadak-keiratalty
+Perferred Name: Keira Talty
+Discord Username: Keira Talty#5022
+REPL url: https://replit.com/join/dtzqtgxfjg-keiratalty
