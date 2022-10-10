@@ -1,34 +1,38 @@
 import random
 import turtle
 
-def isInScreen(wn,t):
-    leftBound = - w.window_width() / 2
-    rightBound = w.window_width() / 2
-    topBound = w.window_height() / 2
-    bottomBound = -w.window_height() / 2
-
-    turtleX = t.xcor()
-    turtleY = t.ycor()
-
-    stillIn = True
-    if turtleX > rightBound or turtleX < leftBound:
-        stillIn = False
-    if turtleY > topBound or turtleY < bottomBound:
-        stillIn = False
-
-    return stillIn
-
 t = turtle.Turtle()
 wn = turtle.Screen()
 
 t.shape('turtle')
-while isInScreen(wn,t):
-    coin = random.randrange(0, 2)
-    if coin == 0:
-        t.left(90)
-    else:
-        t.right(90)
+t.speed(0)
 
-    t.forward(50)
 
+distance = 10
+angle = 90
+is_in_screen = True
+
+colors = ["green", "blue", "purple"]
+
+while is_in_screen:
+  coin = random.randrange(0, 2)
+  if coin == 0:
+    t.left(angle)
+  else:
+    t.right(angle)
+  t.forward(distance)
+
+turtleX = t.xcor()
+turtleY = t.ycor()
+
+x_range = wn.window_width() / 2
+y_range = wn.window_height() / 2
+
+t.color(colors[0])
+
+colors.append(colors.pop(0))
+if abs(turtleX) > x_range or abs(turtleY) > y_range():
+  is_in_screen = False
+
+wn.bgcolor("yellow")
 wn.exitonclick()

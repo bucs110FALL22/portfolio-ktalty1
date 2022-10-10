@@ -1,4 +1,4 @@
-#CS110 Portfolio
+cd #CS110 Portfolio
 
 Perferred Name: Keira Talty
 Discord Username: Keira Talty#5022
