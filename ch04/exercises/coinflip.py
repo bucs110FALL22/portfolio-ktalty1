@@ -34,5 +34,6 @@ colors.append(colors.pop(0))
 if abs(turtleX) > x_range or abs(turtleY) > y_range():
   is_in_screen = False
 
+
 wn.bgcolor("yellow")
-wn.exitonclick()
+wn.exitonclick()wn.exitonclick90
