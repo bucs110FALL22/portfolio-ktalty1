@@ -59,7 +59,7 @@ black = (0, 0, 0)       # Text color
 
 pygame.init()           # Initialize pygame
 
-
+#MAKING THE GRAPH...GRAPHS THE INTERGERS THAT GETS ITERATED AFTER ALL OF THEM IS ITERATED BUT NEED TO GRAPH AFTER EACH INETERGER IS ITERATED.
 
 display = pygame.display.set_mode((600,500)) # Open the output window
 pygame.display.set_caption("Iteration Data for 3n+1, where n = 2 to " + str(upper_limit))  #Name the window
@@ -83,7 +83,7 @@ if len(xy) >= 2:    # Make sure we have at least 2 pair of coordinates to draw l
 font = pygame.font.Font(None, 26)  # configure the font as system default
 
 
-
+#CREATING TITLE ON GRAPH 
 iterationTextMsg = font.render("Maximum number of iterations is: ", 1, black)   # Create the message string
 iterationNumericMsg = font.render(str(max_so_far), 1, black)    # Numeric part has to be expressed as a string
 
@@ -94,7 +94,7 @@ display.blit(iterationNumericMsg, (310, 20))
 pygame.display.update()
 
 
-
+#
 print("\nPress any key to exit the program.")
 
 
