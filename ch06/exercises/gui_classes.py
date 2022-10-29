@@ -1,4 +1,4 @@
-#First Class
+ #First Class
 class Player:
   def__init__(self):
     self.is_small = True
