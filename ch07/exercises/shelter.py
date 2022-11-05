@@ -1,7 +1,7 @@
 import time #import time module
 
 class Animal: #Naming class 
-  def__init__(self, name, type):
+  def __init__ (self, name, type):
       self.id = time.strftime
      # self.id = self(id)
      # self.id = uuid()
@@ -13,7 +13,7 @@ class Animal: #Naming class
   def set_adopted(self):
       self.adopted = time.strftime ("%d/%m/%Y")
 
-  def__str__():
+  def __str__ ():
       result_str = f"{self.name}{[self.type]}
       resulr_str += f"\narrived: {self.arrived}
       result_str += f"narrived: {self.adopted}
