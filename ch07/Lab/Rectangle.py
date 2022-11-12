@@ -8,31 +8,24 @@ class Rectangle:  #Create the class
 
 
 '''
-This function makes sure that any value below zero is set to zero by default. Saves x, y, w, and h as instance variables
+This class makes sure that any value below zero is set to zero by default. Saves x, y, w, and h as instance variables
 	x: (int) x-coordinate of upper left position
   y: (int) y-coordinate of upper left position
   w: (int) width of rectangle
   h: (int) height of rectangle
 	No return
-
-Did notice that height and width were switched between different methods in Rectangle class
 '''
 
 
 def __str__(self):
     self.x
-    self.sy
+    self.y
     self.width
     self.height
     return f"(x : {self.x}, y: {self.y}) width: {self.width}, height {self.height}"
 
 
 '''
-Returns x, y, w, and h 
-	return: (type) description
-	x: (int) x-coordinate of upper left position
-  y: (int) y-coordinate of upper left position
-  w: (int) width of rectangle
-  h: (int) height of rectangle
-	Returns x, y, w, and h values
+This class returns a string containing x, y coordinates as well as the width and height.
+Returns x, y, w, and h values
 '''

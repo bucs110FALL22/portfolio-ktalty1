@@ -54,7 +54,7 @@ pygame.display.flip()
 
 pygame.draw.polygon(window, (0, 0, 225), coords)
 pygame.display.flip()
-pygame.time.wait(500)
+pygame.time.wait(800)
 
 #Square
 coords = []
@@ -72,7 +72,7 @@ pygame.display.flip()
 
 pygame.draw.polygon(window, (0, 0, 225), coords)
 pygame.display.flip()
-pygame.time.wait(500)
+pygame.time.wait(800)
 
 #Hexagon
 coords = []
@@ -90,7 +90,7 @@ pygame.display.flip()
 
 pygame.draw.polygon(window, (0, 0, 225), coords)
 pygame.display.flip()
-pygame.time.wait(500)
+pygame.time.wait(800)
 
 #Nonagon
 coords = []
@@ -107,7 +107,7 @@ pygame.display.flip()
 
 pygame.draw.polygon(window, (0, 0, 225), coords)
 pygame.display.flip()
-pygame.time.wait(500)
+pygame.time.wait(800)
 
 #Circle-ish
 coords = []
@@ -124,6 +124,5 @@ pygame.display.flip()
 
 pygame.draw.polygon(window, (0, 0, 225), coords)
 pygame.display.flip()
-pygame.time.wait(500)
+pygame.time.wait(800)
 
-window.exitonclick()
