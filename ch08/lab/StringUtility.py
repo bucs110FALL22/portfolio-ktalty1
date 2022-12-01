@@ -8,7 +8,7 @@ class StringUtility: #Create the class
     return self.string
 
   '''
-  This class returns self.string
+  This method returns self.string
   Returns self.string
   '''
   
@@ -25,7 +25,7 @@ class StringUtility: #Create the class
       return("many")
 
   '''
-This class says that if any charcter in string is a vowel, return the      number of vowels in that string.
+This method says that if any charcter in string is a vowel, return the      number of vowels in that string.
 Returns number of vowels in strin.
   '''
     
@@ -37,7 +37,7 @@ Returns number of vowels in strin.
         return('')
 
   """
-This class returns string made of first 2 and last 2 characters of given original string. If string length is less than or equal to 2, it returns an empty string.
+This method returns string made of first 2 and last 2 characters of given original string. If string length is less than or equal to 2, it returns an empty string.
 Returns string of first 2 and last 2 characters of the given string.
 """
   
@@ -52,7 +52,7 @@ Returns string of first 2 and last 2 characters of the given string.
       return self.string 
     
   """
-This class leaves the first character of string unchanged. If that first letter is later repeated, that repeated character is replaced with a *. If length is less than or equal to 1, it returns original string.
+This method leaves the first character of string unchanged. If that first letter is later repeated, that repeated character is replaced with a *. If length is less than or equal to 1, it returns original string.
 Returns a string where all repeated characters of first character is replaced by a *.
 """
 
@@ -63,8 +63,24 @@ Returns a string where all repeated characters of first character is replaced by
     return total
 
   """
-This class returns an interger that is the sum of all ascii values in the string.
+This method returns an interger that is the sum of all ascii values in the string.
 Returns sum of ascii values in string.
 """
 
-  #def cipher(self):
+  def cipher(self):
+    modstring = ""  # Shifted string
+    for char in self.string:
+      if char.islower():
+        modstring = modstring + ((chr((ord(char) + (len(self.string)) - 97)% 
+ 26 + 97)))  # Lowercase
+      elif char.isupper():
+        modstring = modstring + ((chr((ord(char) + (len(self.string)) - 65)% 26 + 65)))  # Uppercase
+      else:
+        modstring = modstring + char  # Non-letters
+    return(modstring)
+
+"""
+This method encrypts the string by incrementing the letters by length of string. Characters that are not numbers remain unchanged.
+Returns encrypted string.
+"""
+
